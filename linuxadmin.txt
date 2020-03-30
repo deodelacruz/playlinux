@@ -1,4 +1,93 @@
 03/21/20
 ========
 
+My process improvement recommendations for Network Funtime Company are:
+
+1) Standardize the types of client machines, e.g. one for power users (such as developers) and one for regular users. This makes it easier to maintain the fleet, as there would be less variation on hardware. The types of problems encountered (such as issues with device drivers) would be more manageable. If feasible, negotiate lease agreements for the client machines with a vendor so that hardware can be refreshed after 2-3 years, also avoiding just in time purchases per new hire.
+
+2) Set up central administration of client machines. Have them be part of a domain, and manageable via directory services such as LDAP or NIS. This way, user and computer account setup is easier to manage, and enforcement of group policies such as password strength is possible.
+
+3) Have the client machines be part of a config. mgmt. system like Puppet or Chef, so that machine software and patches are kept up to date automatically.
+
+4) Set up intranet documentation such as wiki or confluence for new users. There should be up to date documentation that new users can follow to help them set up their machines and workspaces, as well as guide them along to productivity w/o reliance on HR.
+
+5) Recommend the use of cloud services as much as possible. This keeps users less reliant on the hardware they have, and keeps them productive irrespective of work device (e.g laptop,tablet,pphone) setup and location. 'The nework is the computer.'
+
+-------------------
+My process improvement recommendations for W.D. Widgets are:
+
+1) Recommend the use of cloud services, in lieue of having just a single server. The lone file server is a single point of failure. With cloud services, they'll get redundancy and high availability, as well as access to services from any location.
+
+2) Enforce role based access controls based on least privilege on the file server, so that information is protected.
+
+3) Move email, file and web servers to the cloud, and enable multi-site replication and backups. It is critical to keep customer data safe.
+
+4) Standardize the types of client machines, e.g. one for power users (such as developers) and one for regular users. This makes it easier to maintain the fleet, as there would be less variation on hardware. The types of problems encountered (such as issues with device drivers) would be more manageable. If feasible, negotiate lease agreements for the client machines with a vendor so that hardware can be refreshed after 2-3 years, also avoiding just in time purchases per new hire.
+
+5) Have the client machines be part of a config. mgmt. system like Puppet or Chef, so that machine software applications and patches are applied based on role or group, and kept up to date automatically.
+
+------------------
+
+My process improvement recommendations for Dewgood are:
+
+1) Evaluate and replace the ticketing system, as well as adopt a messaging system. Get feedback from users about what makes the current system difficult to use, and propose and evaluate along with user groups alternatives. If the current system is hard to use, then it's not effective.
+
+2) Recommend the use of cloud services, in lieue of having just a single server. The lone server is a single point of failure. With cloud services, they'll get redundancy and high availability, as well as access to services from any location.
+
+3) Move email, file and web servers to the cloud, and enable multi-site replication and backups. Then nightly file and web server backups to disk that you bring home becomes unnecessary.
+
+4) Standardize the types of client machines, e.g. one for power users (such as developers) and one for regular users. This makes it easier to maintain the fleet, as there would be less variation on hardware. The types of problems encountered (such as issues with device drivers) would be more manageable. If feasible, negotiate lease agreements for the client machines with a vendor so that hardware can be refreshed after 2-3 years, also avoiding just in time purchases per new hire.
+
+5) Implement and enforce a new hire, and user decommissioning process. This would include an intranet article that guides new hires to productivity, as well as guidelines to managers for tasks to do whenever an employee leaves the company.
+
+
+
+2) Set up central administration of client machines. Have them be part of a domain, and manageable via directory services such as LDAP or NIS. This way, user and computer account setup is easier to manage, and enforcement of group policies such as password strength is possible.
+
+3) Have the client machines be part of a config. mgmt. system like Puppet or Chef, so that machine software and patches are kept up to date automatically.
+
+4) Set up intranet documentation such as wiki or confluence for new users. There should be up to date documentation that new users can follow to help them set up their machines and workspaces, as well as guide them along to productivity w/o reliance on HR.
+
+
+-------
+
+
+ip_address: 35.238.217.182
+password:   y@Cd3h(djAzyslx
+username:   student
+
+student-00-a0feeac83067@master-instance:~$ gcloud compute instances list
+NAME              ZONE           MACHINE_TYPE   PREEMPTIBLE  INTERNAL_IP  EXTERNAL_IP     STATUS
+linux-instance    us-central1-f  n1-standard-1               10.128.0.3   35.238.50.78    RUNNING
+master-instance   us-central1-f  n1-standard-1               10.128.0.2   104.154.17.194  RUNNING
+windows-instance  us-central1-f  n1-standard-1               10.128.0.4   35.238.217.182  RUNNING
+
+DHCPREQUEST of 192.168.1.135 on eth_cli to 255.255.255.255 port 67 (xid=0x43878be1)
+DHCPREQUEST of 192.168.1.135 on eth_cli to 255.255.255.255 port 67 (xid=0x43878be1)
+DHCPREQUEST of 192.168.1.135 on eth_cli to 255.255.255.255 port 67 (xid=0x43878be1)
+DHCPDISCOVER on eth_cli to 255.255.255.255 port 67 interval 3 (xid=0xb2e30064)
+DHCPREQUEST of 192.168.1.3 on eth_cli to 255.255.255.255 port 67 (xid=0x6400e3b2)
+DHCPOFFER of 192.168.1.3 from 192.168.1.1
+DHCPACK of 192.168.1.3 from 192.168.1.1
+Received variables:
+  Hostname: linux-instance
+  IP address: 192.168.1.3
+  Network: 192.168.1.0
+  Netmask: 255.255.255.0
+  Router: 192.168.1.1
+  Domain Name: mycompany.local
+  DNS server: 192.168.1.1
+bound to 192.168.1.3 -- renewal in 9129 seconds.
+
+ip address show eth_srv
+
+sudo systemctl --state=failed
+sudo systemctl --state=running
+
+chmod 600 ~/Downloads/qwikLABS-L1315-12174037.pem
+ssh -i ~/Downloads/qwikLABS-L1318-12193965.pem student-00-a0feeac83067@104.154.17.194
+
+recording actions in LINUX
+ - script session.log
+
 http://bootstrap-it.com/linux-start
